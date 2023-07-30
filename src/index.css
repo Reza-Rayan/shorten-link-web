@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Total Styles */
+body {
+     background-color: #EFF1F7 !important;
+     color: #34313D;
+     font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+}
+
+.mainBg {
+     background-color: #2BD0D0;
+     color: #ffffff;
+}
+
+* {
+     outline: none !important;
+     transition-duration: 0.2s;
+     transition-timing-function: ease-out;
+}
+
+/* Total Styles */
+
+/* Search styles */
+@media (min-width:1024px) {
+     .formBg {
+          background-image: url('./assets/bg-shorten-desktop.svg');
+          background-color: #3A3054;
+          background-size: cover;
+     }
+     
+}
+@media (max-width:1024px) {
+     .formBg {
+          background-image: url('./assets/bg-shorten-mobile.svg');
+          background-color: #3A3054;
+          background-size: cover;
+          background-position: 10% 40%;
+     }
+     
+}
+.shortenForm {
+     margin: auto;
+     width: 80%;
+     position: relative;
+     z-index: 50;
+}
+@media (min-width:1024px) {
+     .prefooterBg {
+          background-image: url('./assets/bg-boost-desktop.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 10%;
+     }
+     
+}
+
+@media (max-width:1024px) {
+     .prefooterBg {
+          background-image: url('./assets/bg-boost-mobile.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 10%;
+     }
+}
+
+.iconHover path:hover {
+     fill: #2BD0D0 !important;
+}
